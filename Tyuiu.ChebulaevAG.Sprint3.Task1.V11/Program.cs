@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using Tyuiu.ChebulaevAG.Sprint3.Task0.V14.Lib;
+using Tyuiu.ChebulaevAG.Sprint3.Task1.V11.Lib;
 
-namespace Tyuiu.ChebulaevAG.Sprint3.Task0.V14
+namespace Tyuiu.ChebulaevAG.Sprint3.Task1.V11
 {
     class Program
     {
@@ -18,25 +18,25 @@ namespace Tyuiu.ChebulaevAG.Sprint3.Task0.V14
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #3                                                               *");
-            Console.WriteLine("* Тема: Оператор цикла for                                                *");
-            Console.WriteLine("* Задание #0                                                              *");
-            Console.WriteLine("* Вариант #14                                                             *");
+            Console.WriteLine("* Тема: Оператор цикла while                                              *");
+            Console.WriteLine("* Задание #1                                                              *");
+            Console.WriteLine("* Вариант #11                                                             *");
             Console.WriteLine("* Выполнил: Чебулаев Андрей Геннадьевич | РПСб-23-1                       *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Написать программу используя цикл for, которая вычисляет произведение   *");
-            Console.WriteLine("* ряда по формуле, при n = 2                                              *");
-            Console.WriteLine("* p = П (k=1; 10) ((1 / k^n)^-1).                                         *");
+            Console.WriteLine("* Написать программу используя цикл while, которая вычисляет произведение *");
+            Console.WriteLine("* ряда по формуле, при a=0,75                                             *");
+            Console.WriteLine("* p = prod k = 1 to 14 (a ^ k + 1/2).                                     *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            int value = 2;
+            double value = 0.75;
             int startValue = 1;
-            int stopValue = 5;
+            int stopValue = 14;
 
-            Console.WriteLine("Перемещенная n = " + value);
+            Console.WriteLine("Перемещенная a = " + value);
             Console.WriteLine("Старт шага = " + startValue);
             Console.WriteLine("Конец шага = " + stopValue);
 
@@ -44,7 +44,7 @@ namespace Tyuiu.ChebulaevAG.Sprint3.Task0.V14
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine("Сумма рада = " + ds.GetMultiplySeries(value, startValue, stopValue));
+            Console.WriteLine("Произведение рада = " + ds.GetMultiplySeries(value, startValue, stopValue));
 
             Console.ReadKey();
         }
